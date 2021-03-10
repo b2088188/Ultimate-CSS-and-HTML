@@ -3,21 +3,25 @@
 }
 
 .container {
-	border: solid 3px lightcoral;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 90vh;
+	display: grid;
+	grid-template: 100px auto 100px / 30fr 70fr;
+	grid-template-areas:
+		"header header"
+		"sidebar main"
+		". footer";
+	gap: 30px;
+	border: solid 3px darkturquoise;
+	height: 100vh;
 }
 
 .box {
-	flex-basis: 10rem;
-	height: 5rem;
-	flex-shrink: 1;
 	background: gold;
-	margin: 1rem;
 }
 
 .box-1 {
-	flex-shrink: 0;
+	grid-area: header;
+}
+
+.box-4 {
+	grid-area: footer;
 }
