@@ -1,26 +1,23 @@
 .boxes {
 	border: solid 3px lightgray;
-	min-height: 200vh;
 }
 
-.avatar {
-	width: 5rem;
+.container {
+	border: solid 3px lightcoral;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+}
+
+.box {
+	flex-basis: 10rem;
 	height: 5rem;
-	background-color: gold;
-	float: left;
-	margin-right: 0.5rem;
+	flex-shrink: 1;
+	background: gold;
+	margin: 1rem;
 }
 
-.tweet {
-	border: solid 1px lightgray;
-}
-
-.clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-.clear {
-	clear: left;
+.box-1 {
+	flex-shrink: 0;
 }
