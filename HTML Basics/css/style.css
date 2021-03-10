@@ -1,0 +1,26 @@
+.boxes {
+	border: solid 3px lightgray;
+	min-height: 200vh;
+}
+
+.box {
+	width: 5rem;
+	height: 5rem;
+}
+
+.box-1 {
+	background-color: gold;
+}
+
+.box-2 {
+	background-color: orangered;
+	position: fixed;
+	left: 5rem;
+	right: 5rem;
+	width: auto;
+	z-index: 1;
+}
+
+.box-3 {
+	background-color: steelblue;
+}
